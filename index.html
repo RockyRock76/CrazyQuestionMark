@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DK DONKEY KONG</title>
+  <!-- Add your CSS stylesheets or external stylesheets here -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Add your HTML content here -->
+  <header>
+    <h1>CheeseNuts</h1>
+  </header>
+
+  <section>
+    <h2>________</h2>
+    <p id="crazyfield">Bro put a number and gamble</p>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="0" max="100" step="1">
+    <button id="submit"> Click here bitch</button>
+  </section>
+   
+
+ 
+  <footer>
+    <p>&copy; 2023 Whore. All rights reserved.</p>
+  </footer>
+
+  <!-- Add your JavaScript code or external scripts here -->
+  <script>
+    //set variables
+    let crazyfield=document.getElementById("crazyfield");
+    let submitbutton = document.getElementById("submit");
+    let crazytext =  "Crazy? I was crazy once. They put me on a room. A rubber room. A rubber room with rats, and rats make me crazy. ";
+  
+    var quantityInput = document.getElementById("quantity");
+   
+
+    // quantity imput is the number of times we are looping
+
+    
+    submitbutton.addEventListener("click",function() {
+        // Update the text content of the paragraph
+        //create temporary crazy text
+       
+        let tempcrazytext = ""
+        var quantity = quantityInput.value;
+        for(let i = 0; i < quantity; i++) {
+           tempcrazytext += crazytext;
+        }
+        
+
+        crazyfield.textContent = tempcrazytext;
+    });
+
+
+
+  </script>
+</body>
+</html>

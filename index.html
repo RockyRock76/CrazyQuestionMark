@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Crazy? </title>
-  <!-- Add your CSS stylesheets or external stylesheets here -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Add your HTML content here -->
-  <header>
-    <h1>Gambling Simulator</h1>
-  </header>
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Crazy? </title>
+    <!-- Add your CSS stylesheets or external stylesheets here -->
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-  <section>
-    <h2>________</h2>
-    <p id="crazyfield">Bro put a number and gamble</p>
-    <label for="quantity">Quantity:</label>
-    <input type="number" id="quantity" name="quantity" min="0" max="100" step="1">
-    <button id="submit"> Click here</button>
-  </section>
+  <body>
+
+    <!-- Add your HTML content here -->
+    <header>
+      <h1>Gambling Simulator</h1>
+      <h2> Ya For Real Son</h2>
+    </header>
+
+
+    <section>
+      <h2>________</h2>
+      <p id="crazyfield">Bro put a number and gamble</p>
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="0" max="100" step="1">
+      <button id="submit"> Click here</button>
+    </section>
 
  
-  <footer>
-    <p>&copy; 2023 Rocky. All rights reserved.</p>
-  </footer>
+    <footer>
+      <p>&copy; 2023 Rocky. All rights reserved.</p>
+    </footer>
 
-  <!-- Add your JavaScript code or external scripts here -->
-  <script>
+    <!-- Add your JavaScript code or external scripts here -->
+    <script>
     //set variables
     let crazyfield=document.getElementById("crazyfield");
     let submitbutton = document.getElementById("submit");
@@ -51,13 +56,12 @@
         for(let i = 0; i < quantity; i++) {
            tempcrazytext += crazytext;
         }
-        
 
         crazyfield.textContent = tempcrazytext;
     });
 
 
 
-  </script>
-</body>
+    </script>
+  </body>
 </html>

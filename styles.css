@@ -8,9 +8,12 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
 body {
   font-family: Arial, sans-serif;
   line-height: 1.5;
-  background-color: #f2f2f2;
+  background-color: #dbdbdb;
   color: #333;
   padding: 20px;
+  .center-text {
+    text-align: center;
+  }
 }
 
 .container {
@@ -22,7 +25,11 @@ body {
 header {
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  padding: 5px;
+  .center-text {
+    text-align: center;
+  }
+  
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -48,8 +55,8 @@ section {
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #94000000;
+  color: #000000;
   padding: 20px;
   text-align: center;
 }

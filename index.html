@@ -65,12 +65,13 @@
     
     submitbutton.addEventListener("click",function() {
         // Update the text content of the paragraph
-        //create temporary crazy text
+        //create temporary crazy text\
+
        
         let tempcrazytext = ""
         var quantity = quantityInput.value;
-        if(quantity > 1000) {
-          quantity = 1000
+        if(quantity > 10000) {
+          quantity = 10000
         }
         for(let i = 0; i < quantity; i++) {
            tempcrazytext += crazytext;
